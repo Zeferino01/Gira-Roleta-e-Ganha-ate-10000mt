@@ -291,17 +291,17 @@
             html: `
               Você ganhou <strong>${prize} MZN</strong>!<br><br>
               <strong>Como receber?</strong><br>
-              1. Crie sua conta oficial na Megagame.<br>
-              2. Faça um depósito mínimo de <b>10MT</b> para confirmar o número.<br>
-              3. Enviaremos seu valor imediatamente após verificação.
+               1. Para receber, registre-se na plataforma clicando no botão abaixo e deposite 100 ou 200 Meticais para que possamos confirmar seu número e enviar o valor.
+               2. ⚠️ O prêmio só será entregue para quem criar uma nova conta na plataforma.
+               3. Se já possui uma conta, é necessário criar uma nova para receber o valor na sua carteira móvel!
             `,
             icon: 'success',
-            confirmButtonText: 'Criar Conta Agora',
+            confirmButtonText: 'REGISTRE-SE AGORA',
             confirmButtonColor: '#00c853',
             allowOutsideClick: false
           }).then(result => {
             if (result.isConfirmed) {
-              window.location.href = 'https://www.megagamelive.com/affiliates/?btag=2233419';
+              window.location.href = 'https://tracking.olabet.co.mz/C.ashx?btag=a_3995b_7c_&affid=3858&siteid=3995&adid=7&c=';
             }
           });
 
@@ -309,9 +309,9 @@
           audioLose.play();
           Swal.fire({
             title: '😢 Que pena!',
-            text: 'Não foi dessa vez. Continue tentando!',
+            text: 'Não foi dessa vez. Você tem mais 1 chance. Clique no botão abaixo e gire novamente!',
             icon: 'info',
-            confirmButtonText: 'OK'
+            confirmButtonText: 'Gire novamente!'
           });
         }
 
